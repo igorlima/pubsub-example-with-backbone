@@ -1,0 +1,36 @@
+{
+  "name": "pubsub-example-with-backbone",
+  "version": "1.0.0",
+  "description": "a Pubsub example with backbone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorlima/pubsub-example-with-backbone.git"
+  },
+  "author": "igorlima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorlima/pubsub-example-with-backbone/issues"
+  },
+  "homepage": "https://github.com/igorlima/pubsub-example-with-backbone#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "bower": "^1.6.7",
+    "express": "^4.13.3",
+    "extend": "^3.0.0",
+    "socket.io": "^1.3.7"
+  },
+  "engines": {
+    "node": "v4.1.1"
+  },
+  "standard": {
+    "ignore": [
+      "force-view.js"
+    ]
+  }
+}
