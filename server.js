@@ -57,7 +57,7 @@ io.on('connection', function (socket) {
 
   socket.on('remove-node', function (node) {
     if (node && node.id) {
-      Vertex[node.id] = null
+      delete Vertex[node.id]
       socket.emit('node-removed', node)
       socket.broadcast.emit('node-removed', node)
     }
@@ -74,7 +74,7 @@ io.on('connection', function (socket) {
   socket.on('remove-link', function (link) {
     var edge = link && link.id && Edge[link.id]
     if (edge) {
-      Edge[link.id] = null
+      delete Edge[link.id]
       socket.broadcast.emit('link-removed', link)
       socket.emit('link-removed', link)
     }
